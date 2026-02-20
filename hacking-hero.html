@@ -4,6 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-game-slash-normalizer>
+      (function () {
+        var path = window.location.pathname || '/';
+        if (path.length <= 1 || !path.endsWith('/')) return;
+        var slug = path.slice(1, -1);
+        var gameSlugs = ["cookie-clicker","cookie-clicker-2","fun-clicker","liquor-clicker","bloodmoney","italian-brainrot-baby-clicker","clicker-evolution-puzzle-2","mine-clicker-cookie","loaf-clicker","brainrot-clicker","hacking-hero","icebreakers-idle-clicker","idle-landmark-builder","age-wars-idle","tiny-fishing","woodman-idle-tycoon","tank-masters-idle-tanks","flip-skater-idle","grow-slime","idle-game-dev-simulator","paper-io-2","battletabs","2v2-io","edelweiss","crazy-cattle-3d","block-blast","google-dino","basketball-stars","doge-miner","lolshot-io","splatoon-io","idle-breakout","adventure-capitalist","clicker-heroes"];
+        if (gameSlugs.indexOf(slug) === -1) return;
+        window.location.replace('/' + slug + window.location.search + window.location.hash);
+      })();
+    </script>
     <title>Hacking Hero: Hacker Clicker – Play Online Free</title>
     <meta name="description"
         content="Digital upgrades, system hacks, and profit scaling combine in Hacking Hero: Hacker Clicker to create a deep idle tech experience. Let's start!">
