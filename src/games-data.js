@@ -6,7 +6,7 @@
 export const GAMES = [
     {
         name: 'Cookie Clicker',
-        url: '/cookie-clicker.html',
+        url: '/cookie-clicker',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/cookie-clicker.png',
@@ -14,7 +14,7 @@ export const GAMES = [
     },
     {
         name: 'Cookie Clicker 2',
-        url: '/cookie-clicker-2.html',
+        url: '/cookie-clicker-2',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/cookie-clicker-2.png',
@@ -22,7 +22,7 @@ export const GAMES = [
     },
     {
         name: 'Fun Clicker',
-        url: '/fun-clicker.html',
+        url: '/fun-clicker',
         category: 'Clicker',
         categories: ['Clicker', 'Idle', 'Arcade'],
         image: '/assets/fun-clicker.png',
@@ -30,7 +30,7 @@ export const GAMES = [
     },
     {
         name: 'Liquor Clicker',
-        url: '/liquor-clicker.html',
+        url: '/liquor-clicker',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/liquor-clicker.png',
@@ -38,7 +38,7 @@ export const GAMES = [
     },
     {
         name: 'BLOODMONEY',
-        url: '/bloodmoney.html',
+        url: '/bloodmoney',
         category: 'Clicker',
         categories: ['Clicker', 'Arcade'],
         image: '/assets/bloodmoney.png',
@@ -46,7 +46,7 @@ export const GAMES = [
     },
     {
         name: 'Italian Brainrot Baby Clicker',
-        url: '/italian-brainrot-baby-clicker.html',
+        url: '/italian-brainrot-baby-clicker',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/italian-brainrot-baby-clicker.png',
@@ -54,7 +54,7 @@ export const GAMES = [
     },
     {
         name: 'Clicker Evolution Puzzle 2',
-        url: '/clicker-evolution-puzzle-2.html',
+        url: '/clicker-evolution-puzzle-2',
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/clicker-evolution-puzzle-2.png',
@@ -62,7 +62,7 @@ export const GAMES = [
     },
     {
         name: 'Mine Clicker: Cookie!',
-        url: '/mine-clicker-cookie.html',
+        url: '/mine-clicker-cookie',
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/mine-clicker-cookie.png',
@@ -70,7 +70,7 @@ export const GAMES = [
     },
     {
         name: 'Loaf Clicker',
-        url: '/loaf-clicker.html',
+        url: '/loaf-clicker',
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/loaf-clicker.png',
@@ -78,7 +78,7 @@ export const GAMES = [
     },
     {
         name: 'Brainrot Clicker',
-        url: '/brainrot-clicker.html',
+        url: '/brainrot-clicker',
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/brainrot-clicker.png',
@@ -86,7 +86,7 @@ export const GAMES = [
     },
     {
         name: 'Hacking Hero: Hacker Clicker',
-        url: '/hacking-hero.html',
+        url: '/hacking-hero',
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/hacking-hero.png',
@@ -94,7 +94,7 @@ export const GAMES = [
     },
     {
         name: 'Icebreakers: Idle Clicker',
-        url: '/icebreakers-idle-clicker.html',
+        url: '/icebreakers-idle-clicker',
         category: 'Idle',
         categories: ['Idle', 'Clicker'],
         image: '/assets/icebreakers-idle-clicker.png',
@@ -102,7 +102,7 @@ export const GAMES = [
     },
     {
         name: 'Idle Landmark Builder',
-        url: '/idle-landmark-builder.html',
+        url: '/idle-landmark-builder',
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/idle-landmark-builder.png',
@@ -110,7 +110,7 @@ export const GAMES = [
     },
     {
         name: 'Tiny Fishing',
-        url: '/tiny-fishing.html',
+        url: '/tiny-fishing',
         category: 'Arcade',
         categories: ['Arcade', 'Idle'],
         image: '/assets/tiny-fishing.png',
@@ -118,7 +118,7 @@ export const GAMES = [
     },
     {
         name: 'Age Wars Idle',
-        url: '/age-wars-idle.html',
+        url: '/age-wars-idle',
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/age-wars-idle.png',
@@ -126,7 +126,7 @@ export const GAMES = [
     },
     {
         name: 'Woodman Idle Tycoon',
-        url: '/woodman-idle-tycoon.html',
+        url: '/woodman-idle-tycoon',
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/woodman-idle-tycoon.png',
@@ -134,7 +134,7 @@ export const GAMES = [
     },
     {
         name: 'Tank Masters: Idle Tanks',
-        url: '/tank-masters-idle-tanks.html',
+        url: '/tank-masters-idle-tanks',
         category: 'Idle',
         categories: ['Idle', 'Arcade'],
         image: '/assets/tank-masters-idle-tanks.png',
@@ -142,7 +142,7 @@ export const GAMES = [
     },
     {
         name: 'Flip Skater Idle',
-        url: '/flip-skater-idle.html',
+        url: '/flip-skater-idle',
         category: 'Sports',
         categories: ['Sports', 'Idle'],
         image: '/assets/flip-skater-idle.png',
@@ -150,7 +150,7 @@ export const GAMES = [
     },
     {
         name: 'Grow Slime',
-        url: '/grow-slime.html',
+        url: '/grow-slime',
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/grow-slime.png',
@@ -158,7 +158,7 @@ export const GAMES = [
     },
     {
         name: 'Idle Game Dev Simulator',
-        url: '/idle-game-dev-simulator.html',
+        url: '/idle-game-dev-simulator',
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/idle-game-dev-simulator.png',
@@ -166,7 +166,7 @@ export const GAMES = [
     },
     {
         name: 'Paper.IO 2',
-        url: '/paper-io-2.html',
+        url: '/paper-io-2',
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/paper-io-2.png',
@@ -174,7 +174,7 @@ export const GAMES = [
     },
     {
         name: 'BattleTabs',
-        url: '/battletabs.html',
+        url: '/battletabs',
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/battletabs.png',
@@ -182,7 +182,7 @@ export const GAMES = [
     },
     {
         name: '2v2.io',
-        url: '/2v2-io.html',
+        url: '/2v2-io',
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/2v2-io.png',
@@ -190,7 +190,7 @@ export const GAMES = [
     },
     {
         name: 'Edelweiss',
-        url: '/edelweiss.html',
+        url: '/edelweiss',
         category: 'Adventure',
         categories: ['Adventure', 'Arcade'],
         image: '/assets/edelweiss.png',
@@ -198,7 +198,7 @@ export const GAMES = [
     },
     {
         name: 'Crazy Cattle 3D',
-        url: '/crazy-cattle-3d.html',
+        url: '/crazy-cattle-3d',
         category: 'Arcade',
         categories: ['Arcade', 'Adventure'],
         image: '/assets/crazy-cattle-3d.png',
@@ -206,7 +206,7 @@ export const GAMES = [
     },
     {
         name: 'Block Blast',
-        url: '/block-blast.html',
+        url: '/block-blast',
         category: 'Arcade',
         categories: ['Arcade', 'Puzzle'],
         image: '/assets/block-blast.png',
@@ -214,7 +214,7 @@ export const GAMES = [
     },
     {
         name: 'Google Dino',
-        url: '/google-dino.html',
+        url: '/google-dino',
         category: 'Arcade',
         categories: ['Arcade', 'Adventure'],
         image: '/assets/google-dino.png',
@@ -222,7 +222,7 @@ export const GAMES = [
     },
     {
         name: 'Basketball Stars',
-        url: '/basketball-stars.html',
+        url: '/basketball-stars',
         category: 'Sports',
         categories: ['Sports', 'Arcade'],
         image: '/assets/basketball-stars.png',
@@ -230,7 +230,7 @@ export const GAMES = [
     },
     {
         name: 'Doge Miner',
-        url: '/doge-miner.html',
+        url: '/doge-miner',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/doge-miner.png',
@@ -238,7 +238,7 @@ export const GAMES = [
     },
     {
         name: 'LOLShot.io',
-        url: '/lolshot-io.html',
+        url: '/lolshot-io',
         category: '.io',
         categories: ['.io', 'Arcade', 'Sports'],
         image: '/assets/lolshot-io.png',
@@ -246,7 +246,7 @@ export const GAMES = [
     },
     {
         name: 'Splatoon.io',
-        url: '/splatoon-io.html',
+        url: '/splatoon-io',
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/splatoon-io.png',
@@ -254,7 +254,7 @@ export const GAMES = [
     },
     {
         name: 'Idle Breakout',
-        url: '/idle-breakout.html',
+        url: '/idle-breakout',
         category: 'Idle',
         categories: ['Idle', 'Arcade'],
         image: '/assets/idle-breakout.png',
@@ -262,7 +262,7 @@ export const GAMES = [
     },
     {
         name: 'Adventure Capitalist',
-        url: '/adventure-capitalist.html',
+        url: '/adventure-capitalist',
         category: 'Idle',
         categories: ['Idle', 'Clicker'],
         image: '/assets/adventure-capitalist.png',
@@ -270,7 +270,7 @@ export const GAMES = [
     },
     {
         name: 'Clicker Heroes',
-        url: '/clicker-heroes.html',
+        url: '/clicker-heroes',
         category: 'Idle',
         categories: ['Idle', 'Clicker', 'Adventure'],
         image: '/assets/clicker-heroes.png',
