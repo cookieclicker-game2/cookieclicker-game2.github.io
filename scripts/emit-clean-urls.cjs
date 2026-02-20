@@ -9,6 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 const dist = path.resolve(__dirname, '../dist');
+const sourceAssets = path.resolve(__dirname, '../assets');
 const gameFiles = [
     'cookie-clicker', 'cookie-clicker-2', 'fun-clicker', 'liquor-clicker', 'bloodmoney',
     'italian-brainrot-baby-clicker', 'clicker-evolution-puzzle-2', 'mine-clicker-cookie',
@@ -20,6 +21,17 @@ const gameFiles = [
     'adventure-capitalist', 'clicker-heroes', 'doge-miner'
 ];
 
+function copyDirFilesFlat(fromDir, toDir) {
+    if (!fs.existsSync(fromDir)) return;
+    fs.mkdirSync(toDir, { recursive: true });
+    fs.readdirSync(fromDir, { withFileTypes: true }).forEach((entry) => {
+        if (!entry.isFile()) return;
+        const src = path.join(fromDir, entry.name);
+        const dest = path.join(toDir, entry.name);
+        fs.copyFileSync(src, dest);
+    });
+}
+
 gameFiles.forEach((name) => {
     const src = path.join(dist, name + '.html');
     if (!fs.existsSync(src)) return;
@@ -30,6 +42,8 @@ gameFiles.forEach((name) => {
 });
 
 const distAssets = path.join(dist, 'assets');
+copyDirFilesFlat(sourceAssets, distAssets);
+
 if (fs.existsSync(distAssets)) {
     const assetFiles = fs.readdirSync(distAssets).filter((f) => /\.(png|jpe?g|webp)$/i.test(f));
 
