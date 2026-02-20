@@ -13,14 +13,6 @@ export const GAMES = [
         addedDate: '2026-01-15',
     },
     {
-        name: 'Cookie Clicker 2',
-        url: '/cookie-clicker-2',
-        category: 'Clicker',
-        categories: ['Clicker', 'Idle'],
-        image: '/assets/cookie-clicker-2.png',
-        addedDate: '2026-02-01',
-    },
-    {
         name: 'Fun Clicker',
         url: '/fun-clicker',
         category: 'Clicker',

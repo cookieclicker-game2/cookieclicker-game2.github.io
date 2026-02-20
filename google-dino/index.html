@@ -10,7 +10,7 @@
         var normalizedPath = null;
         var isDuplicateGameUrl = false;
 
-        var gameSlugs = ["cookie-clicker","cookie-clicker-2","fun-clicker","liquor-clicker","bloodmoney","italian-brainrot-baby-clicker","clicker-evolution-puzzle-2","mine-clicker-cookie","loaf-clicker","brainrot-clicker","hacking-hero","icebreakers-idle-clicker","idle-landmark-builder","age-wars-idle","tiny-fishing","woodman-idle-tycoon","tank-masters-idle-tanks","flip-skater-idle","grow-slime","idle-game-dev-simulator","paper-io-2","battletabs","2v2-io","edelweiss","crazy-cattle-3d","block-blast","google-dino","basketball-stars","doge-miner","lolshot-io","splatoon-io","idle-breakout","adventure-capitalist","clicker-heroes"];
+        var gameSlugs = ["cookie-clicker","fun-clicker","liquor-clicker","bloodmoney","italian-brainrot-baby-clicker","clicker-evolution-puzzle-2","mine-clicker-cookie","loaf-clicker","brainrot-clicker","hacking-hero","icebreakers-idle-clicker","idle-landmark-builder","age-wars-idle","tiny-fishing","woodman-idle-tycoon","tank-masters-idle-tanks","flip-skater-idle","grow-slime","idle-game-dev-simulator","paper-io-2","battletabs","2v2-io","edelweiss","crazy-cattle-3d","block-blast","google-dino","basketball-stars","doge-miner","lolshot-io","splatoon-io","idle-breakout","adventure-capitalist","clicker-heroes"];
 
         if (path.length > 1 && path.endsWith('/')) {
           var slashSlug = path.slice(1, -1);
@@ -21,7 +21,7 @@
         } else if (/^\/[a-z0-9-]+\.html$/.test(path)) {
           var htmlSlug = path.slice(1, -5);
           if (gameSlugs.indexOf(htmlSlug) !== -1) {
-            normalizedPath = htmlSlug === 'cookie-clicker-2' ? '/' : '/' + htmlSlug;
+            normalizedPath = '/' + htmlSlug;
             isDuplicateGameUrl = true;
           }
         }
@@ -237,7 +237,7 @@
                     <h2>Related Games You May Enjoy</h2>
                     <p>If you like reflex-based or incremental-style browser games, consider trying:</p>
                     <ul>
-                        <li><a href="/cookie-clicker-2">Cookie Clicker 2</a></li>
+                        <li><a href="/">Cookie Clicker 2</a></li>
                         <li><a href="/idle-breakout">Idle Breakout</a></li>
                         <li><a href="/paper-io-2">Paper.IO 2</a></li>
                     </ul>

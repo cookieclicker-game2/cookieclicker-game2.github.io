@@ -24,12 +24,12 @@ function initGA() {
 }
 initGA();
 
-// Embed game in #game-frame: homepage, Cookie Clicker, Cookie Clicker 2 → memelite70; other game pages keep their own iframe
+// Embed game in #game-frame: homepage and Cookie Clicker → memelite70; other game pages keep their own iframe
 const gameContainer = document.querySelector('#game-frame');
 const pathname = (window.location.pathname || '').replace(/\/index\.html$/, '/') || '/';
 const isHome = pathname === '/' || pathname === '';
-const isCookieClickerOr2 = pathname.includes('cookie-clicker');
-if (gameContainer && (isHome || isCookieClickerOr2)) {
+const isCookieClicker = pathname === '/cookie-clicker' || pathname === '/cookie-clicker/';
+if (gameContainer && (isHome || isCookieClicker)) {
     gameContainer.innerHTML = '<iframe src="https://memelite70.github.io/assets/cookie-clicker.html" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen></iframe>';
 }
 
@@ -311,7 +311,7 @@ if (document.readyState === 'loading') {
 function getRecommendedForCarousel() {
     const pathname = (window.location.pathname || '').replace(/\/index\.html$/, '/') || '/';
     const isHome = pathname === '/' || pathname === '';
-    const currentGameUrl = isHome ? '/cookie-clicker-2.html' : pathname;
+    const currentGameUrl = isHome ? '/cookie-clicker' : pathname;
     const hasClickerOrIdle = (g) => (g.categories || [g.category]).some((c) => c === 'Clicker' || c === 'Idle');
     return GAMES.filter(hasClickerOrIdle).filter((g) => g.url !== currentGameUrl);
 }
