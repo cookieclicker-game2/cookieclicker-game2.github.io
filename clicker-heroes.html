@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Heroes – RPG Idle Clicker Adventure</title>
+    <meta name="description"
+        content="Defeat monsters, upgrade heroes, and unlock powerful abilities in Clicker Heroes, combining RPG combat systems with deep idle progression.">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="canonical" href="https://cookieclicker2game.org/clicker-heroes">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cookieclicker2game.org/clicker-heroes">
+    <meta property="og:title" content="Clicker Heroes – RPG Idle Clicker Adventure">
+    <meta property="og:description"
+        content="Defeat monsters, upgrade heroes, and unlock powerful abilities in Clicker Heroes, combining RPG combat systems with deep idle progression.">
+    <meta property="og:image" content="https://cookieclicker2game.org/assets/clicker-heroes.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cookieclicker2game.org/clicker-heroes">
+    <meta name="twitter:title" content="Clicker Heroes – RPG Idle Clicker Adventure">
+    <meta name="twitter:description"
+        content="Defeat monsters, upgrade heroes, and unlock powerful abilities in Clicker Heroes, combining RPG combat systems with deep idle progression.">
+    <meta name="twitter:image" content="https://cookieclicker2game.org/assets/clicker-heroes.png">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"VideoGame","name":"Clicker Heroes","description":"Clicker Heroes is a legendary idle RPG where you defeat monsters, hire heroes, and unlock exponential damage scaling. Learn how to play, upgrade strategies, and optimize progression.","image":"https://cookieclicker2game.org/assets/clicker-heroes.png","url":"https://cookieclicker2game.org/clicker-heroes","genre":["Idle","Clicker","Adventure"],"applicationCategory":"Game","operatingSystem":"Web Browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cookieclicker2game.org/"},{"@type":"ListItem","position":2,"name":"Clicker Heroes","item":"https://cookieclicker2game.org/clicker-heroes"}]}
+    </script>
+</head>
+
+<body class="page-clicker-heroes">
+    <header class="navbar">
+        <div class="container">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <a href="/" class="logo">Cookie Clicker 2</a>
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search games...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/arcade.games/">Arcade</a></li>
+                    <li><a href="/clicker.games/">Clicker</a></li>
+                    <li><a href="/idle.games/">Idle</a></li>
+                    <li><a href="/io.games/">.io</a></li>
+                    <li><a href="/adventure.games/">Adventure</a></li>
+                    <li><a href="/sports.games/">Sports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <span class="current">Clicker Heroes</span>
+        </div>
+
+        <div class="page-layout-wrapper">
+            <aside class="game-sidebar left" id="sidebar-left">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">New Games</h3>
+                    <a href="/new.games/" class="view-more-icon" title="View more">➜</a>
+                </div>
+                <div class="sidebar-content" id="sidebar-left-content"></div>
+            </aside>
+
+            <div class="page-center-column">
+                <section class="game-hero">
+                    <div class="game-hero-bg"></div>
+                    <div class="game-hero-inner">
+                        <div class="game-wrapper" id="game-frame">
+                            <iframe src="https://cdn.clickerheroes.com/gamebuild/index.php" width="100%" height="100%"
+                                frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen
+                                title="Clicker Heroes"></iframe>
+                        </div>
+                        <div class="game-info-bar">
+                            <div class="game-info-left">
+                                <h1>Clicker Heroes</h1>
+                            </div>
+                            <div class="game-actions-right">
+                                <button class="action-btn" onclick="toggleFavorite()" title="Favorite"><i>❤️</i></button>
+                                <button class="action-btn" onclick="shareGame()" title="Share"><i>🔗</i></button>
+                                <button class="action-btn" onclick="toggleTheaterMode()" title="Theater Mode"><i>▭</i></button>
+                                <button class="action-btn" onclick="toggleFullscreen()" title="Fullscreen"><i>↗️</i></button>
+                            </div>
+                        </div>
+                        <section class="game-carousel-section">
+                            <h2 class="carousel-title">Recommended for you</h2>
+                            <div class="carousel-container">
+                                <button class="carousel-btn prev-btn" aria-label="Previous">❮</button>
+                                <div class="carousel-track-container">
+                                    <div class="carousel-track" id="game-carousel-track"></div>
+                                </div>
+                                <button class="carousel-btn next-btn" aria-label="Next">❯</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Idle RPG Meets Exponential Scaling</h2>
+                    <p>Clicker Heroes blends role-playing mechanics with idle progression systems. Instead of directly
+                        controlling a character in real time, players defeat monsters either by clicking or by hiring
+                        heroes who deal automatic damage.</p>
+                    <p>The objective is continuous progression through stages filled with increasingly durable enemies.
+                        Every ten levels introduces a boss with a time limit, adding pressure and pacing to the otherwise
+                        idle structure.</p>
+                    <p>The game’s strength lies in its layered scaling systems. Damage numbers grow from small increments
+                        to astronomical values, creating a strong sense of long-term advancement.</p>
+
+                    <h2>How to Play Clicker Heroes</h2>
+                    <p>Clicker Heroes begins with manual monster elimination. Early gameplay focuses on clicking enemies to
+                        earn gold. Gold is then invested in recruiting heroes who deal damage automatically.</p>
+                    <p>As the roster expands, heroes can be upgraded to unlock skill multipliers and synergy bonuses.
+                        Eventually, manual clicking becomes insignificant compared to automated hero damage.</p>
+                    <p>Core gameplay loop:</p>
+                    <ul>
+                        <li>Defeat monsters to earn gold</li>
+                        <li>Recruit new heroes</li>
+                        <li>Upgrade hero damage</li>
+                        <li>Clear stages and defeat bosses</li>
+                        <li>Ascend to gain permanent bonuses</li>
+                    </ul>
+                    <p>Progression is theoretically endless, driven by repeated ascensions and compounding multipliers.</p>
+
+                    <h2>Hero System and Damage Structure</h2>
+                    <p>Each hero has a base DPS (damage per second) value. Upgrading heroes increases their output
+                        exponentially. At specific level thresholds, heroes unlock powerful abilities.</p>
+                    <div class="content-section-table-wrap">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>System Component</th>
+                                    <th>Function</th>
+                                    <th>Long-Term Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hero Levels</td>
+                                    <td>Increase DPS</td>
+                                    <td>Core scaling engine</td>
+                                </tr>
+                                <tr>
+                                    <td>Skills Unlocks</td>
+                                    <td>Activate multipliers</td>
+                                    <td>Mid-game acceleration</td>
+                                </tr>
+                                <tr>
+                                    <td>Ancients</td>
+                                    <td>Provide permanent bonuses</td>
+                                    <td>Strategic optimization</td>
+                                </tr>
+                                <tr>
+                                    <td>Ascension</td>
+                                    <td>Reset with rewards</td>
+                                    <td>Infinite growth loop</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>The introduction of Ancients transforms Clicker Heroes from simple clicking into a strategic
+                        optimization game.</p>
+
+                    <h2>Ascension and Long-Term Strategy</h2>
+                    <p>Ascension is the prestige mechanic of Clicker Heroes. Upon resetting progression, players earn Hero
+                        Souls that permanently increase damage output.</p>
+                    <p>Optimal ascension timing significantly impacts overall efficiency. Resetting too early slows
+                        scaling; resetting too late reduces long-term multipliers. Experienced players calculate ideal
+                        stage thresholds before ascending.</p>
+                    <p>Balancing Ancient upgrades is essential. Investing heavily in gold-based bonuses versus damage-based
+                        bonuses depends on individual playstyle.</p>
+
+                    <h2>Why Clicker Heroes Became Iconic</h2>
+                    <p>Clicker Heroes stands out because it merges idle mechanics with RPG depth. Instead of passive
+                        progression alone, it introduces strategic layers such as build optimization, hero synergy, and
+                        prestige timing.</p>
+                    <p>Its massive damage numbers and visible progression curve reinforce a satisfying growth cycle. The
+                        combination of automation and meaningful resets keeps the gameplay loop engaging for extended
+                        sessions.</p>
+
+                    <h2>Related Games</h2>
+                    <p>Players who enjoy Clicker Heroes may also like:</p>
+                    <ul>
+                        <li><a href="/adventure-capitalist">Adventure Capitalist</a></li>
+                        <li><a href="/idle-breakout">Idle Breakout</a></li>
+                        <li><a href="/doge-miner">Doge Miner</a></li>
+                    </ul>
+
+                    <p>Clicker Heroes remains one of the most influential idle RPG games ever created. Through strategic
+                        ascension, hero optimization, and compounding multipliers, it delivers a deep progression system
+                        that continues scaling indefinitely.</p>
+
+                    <div class="category-tags">
+                        <a href="/idle.games/" class="category-tag">Idle</a>
+                        <a href="/clicker.games/" class="category-tag">Clicker</a>
+                        <a href="/adventure.games/" class="category-tag">Adventure</a>
+                    </div>
+
+                    <div class="author-box">
+                        <img src="/assets/favicon.png" alt="Cookie Clicker 2 Team" class="author-image">
+                        <div class="author-info">
+                            <h3>Cookie Clicker 2 Team</h3>
+                            <p>Expert editors and game curators.</p>
+                            <span class="publish-date">Last Updated: February 19, 2026</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="game-sidebar right" id="sidebar-right">
+                <div class="sidebar-content" id="sidebar-right-content"></div>
+            </aside>
+        </div>
+
+        <div id="toast-container" class="toast-container"></div>
+
+        <script>
+            function showToast(message) {
+                var c = document.getElementById('toast-container');
+                if (!c) return;
+                var t = document.createElement('div');
+                t.className = 'toast';
+                t.innerHTML = '<i>✓</i> <span>' + message + '</span>';
+                c.appendChild(t);
+                requestAnimationFrame(function () { t.classList.add('show'); });
+                setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.remove(); }, 300); }, 3000);
+            }
+            function toggleFavorite() {
+                var btn = document.querySelector('.action-btn[title="Favorite"]');
+                if (btn) { btn.classList.toggle('active'); showToast(btn.classList.contains('active') ? 'Added to favorites' : 'Removed from favorites'); }
+            }
+            function shareGame() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: document.title,
+                        text: 'Play Clicker Heroes online for free.',
+                        url: window.location.href
+                    }).then(function () {
+                        showToast('Share successful');
+                    }).catch(function () {
+                        showToast('Share canceled');
+                    });
+                } else if (navigator.clipboard) {
+                    navigator.clipboard.writeText(window.location.href).then(function () {
+                        showToast('Link copied to clipboard');
+                    }).catch(function () {
+                        showToast('Unable to copy link');
+                    });
+                }
+            }
+            function toggleTheaterMode() {
+                var body = document.body;
+                body.classList.toggle('theater-mode');
+                showToast(body.classList.contains('theater-mode') ? 'Theater mode on' : 'Theater mode off');
+            }
+            function toggleFullscreen() {
+                var frame = document.getElementById('game-frame');
+                if (!frame) return;
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else if (frame.requestFullscreen) {
+                    frame.requestFullscreen();
+                }
+            }
+        </script>
+        <script type="module" src="/src/main.js"></script>
+    </main>
+</body>
+
+</html>
+

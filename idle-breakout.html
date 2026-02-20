@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Breakout – Classic Brick Breaker Idle</title>
+    <meta name="description"
+        content="Break bricks automatically and upgrade ball power in Idle Breakout, combining classic arcade mechanics with deep idle progression systems.">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="canonical" href="https://cookieclicker2game.org/idle-breakout">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cookieclicker2game.org/idle-breakout">
+    <meta property="og:title" content="Idle Breakout – Classic Brick Breaker Idle">
+    <meta property="og:description"
+        content="Break bricks automatically and upgrade ball power in Idle Breakout, combining classic arcade mechanics with deep idle progression systems.">
+    <meta property="og:image" content="https://cookieclicker2game.org/assets/idle-breakout.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cookieclicker2game.org/idle-breakout">
+    <meta name="twitter:title" content="Idle Breakout – Classic Brick Breaker Idle">
+    <meta name="twitter:description"
+        content="Break bricks automatically and upgrade ball power in Idle Breakout, combining classic arcade mechanics with deep idle progression systems.">
+    <meta name="twitter:image" content="https://cookieclicker2game.org/assets/idle-breakout.png">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"VideoGame","name":"Idle Breakout","description":"Idle Breakout combines classic brick-breaking mechanics with idle game progression. Learn how to play, upgrade strategies, and optimize ball efficiency for maximum rewards.","image":"https://cookieclicker2game.org/assets/idle-breakout.png","url":"https://cookieclicker2game.org/idle-breakout","genre":["Idle","Arcade"],"applicationCategory":"Game","operatingSystem":"Web Browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cookieclicker2game.org/"},{"@type":"ListItem","position":2,"name":"Idle Breakout","item":"https://cookieclicker2game.org/idle-breakout"}]}
+    </script>
+</head>
+
+<body class="page-idle-breakout">
+    <header class="navbar">
+        <div class="container">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <a href="/" class="logo">Cookie Clicker 2</a>
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search games...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/arcade.games/">Arcade</a></li>
+                    <li><a href="/clicker.games/">Clicker</a></li>
+                    <li><a href="/idle.games/">Idle</a></li>
+                    <li><a href="/io.games/">.io</a></li>
+                    <li><a href="/adventure.games/">Adventure</a></li>
+                    <li><a href="/sports.games/">Sports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <span class="current">Idle Breakout</span>
+        </div>
+
+        <div class="page-layout-wrapper">
+            <aside class="game-sidebar left" id="sidebar-left">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">New Games</h3>
+                    <a href="/new.games/" class="view-more-icon" title="View more">➜</a>
+                </div>
+                <div class="sidebar-content" id="sidebar-left-content"></div>
+            </aside>
+
+            <div class="page-center-column">
+                <section class="game-hero">
+                    <div class="game-hero-bg"></div>
+                    <div class="game-hero-inner">
+                        <div class="game-wrapper" id="game-frame">
+                            <iframe src="https://kdata1.com/2019/11/13179211/" width="100%" height="100%"
+                                frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen
+                                title="Idle Breakout"></iframe>
+                        </div>
+                        <div class="game-info-bar">
+                            <div class="game-info-left">
+                                <h1>Idle Breakout</h1>
+                            </div>
+                            <div class="game-actions-right">
+                                <button class="action-btn" onclick="toggleFavorite()" title="Favorite"><i>❤️</i></button>
+                                <button class="action-btn" onclick="shareGame()" title="Share"><i>🔗</i></button>
+                                <button class="action-btn" onclick="toggleTheaterMode()" title="Theater Mode"><i>▭</i></button>
+                                <button class="action-btn" onclick="toggleFullscreen()" title="Fullscreen"><i>↗️</i></button>
+                            </div>
+                        </div>
+                        <section class="game-carousel-section">
+                            <h2 class="carousel-title">Recommended for you</h2>
+                            <div class="carousel-container">
+                                <button class="carousel-btn prev-btn" aria-label="Previous">❮</button>
+                                <div class="carousel-track-container">
+                                    <div class="carousel-track" id="game-carousel-track"></div>
+                                </div>
+                                <button class="carousel-btn next-btn" aria-label="Next">❯</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>Concept and Gameplay Identity</h2>
+                    <p>Idle Breakout reinvents the traditional brick breaker formula by integrating incremental progression
+                        systems. Inspired by the classic arcade concept of bouncing balls to destroy bricks, the game
+                        introduces automation, scaling damage multipliers, and resource optimization.</p>
+                    <p>Instead of manually controlling a paddle, players invest in different types of balls that
+                        automatically break bricks. As bricks become stronger at higher levels, strategic upgrades replace
+                        reflex-based gameplay as the dominant success factor.</p>
+                    <p>The result is a hybrid between arcade destruction mechanics and economic scaling typical of idle
+                        games.</p>
+
+                    <h2>How to Play Idle Breakout</h2>
+                    <p>The game begins with basic balls that slowly chip away at low-durability bricks. As bricks are
+                        destroyed, players earn currency used to purchase additional balls and upgrades.</p>
+                    <p>Gameplay revolves around three continuous actions:</p>
+                    <ul>
+                        <li>Generating income by breaking bricks</li>
+                        <li>Investing in new ball types</li>
+                        <li>Upgrading damage and efficiency</li>
+                    </ul>
+                    <p>There is no manual aiming system. Success depends entirely on investment decisions and compounding
+                        multipliers.</p>
+                    <p>Progression accelerates significantly once higher-tier balls are unlocked, transforming slow early
+                        stages into high-speed destruction cycles.</p>
+
+                    <h2>Ball Types and Their Roles</h2>
+                    <p>Idle Breakout features multiple ball categories, each with unique characteristics. Understanding
+                        their efficiency is crucial for optimal scaling.</p>
+                    <div class="content-section-table-wrap">
+                        <table class="content-table">
+                            <thead>
+                                <tr>
+                                    <th>Ball Type</th>
+                                    <th>Strength Profile</th>
+                                    <th>Strategic Role</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Basic Ball</td>
+                                    <td>Balanced damage &amp; speed</td>
+                                    <td>Early-game foundation</td>
+                                </tr>
+                                <tr>
+                                    <td>Sniper Ball</td>
+                                    <td>High single-target damage</td>
+                                    <td>Effective against strong bricks</td>
+                                </tr>
+                                <tr>
+                                    <td>Plasma Ball</td>
+                                    <td>Splash damage</td>
+                                    <td>Efficient in dense layouts</td>
+                                </tr>
+                                <tr>
+                                    <td>Scatter Ball</td>
+                                    <td>Multiple split shots</td>
+                                    <td>Area coverage optimization</td>
+                                </tr>
+                                <tr>
+                                    <td>Cannon Ball</td>
+                                    <td>Heavy burst damage</td>
+                                    <td>Late-game scaling</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Diversification typically outperforms single-type investment. Combining area damage with high
+                        single-target power increases overall efficiency.</p>
+
+                    <h2>Upgrade Optimization Model</h2>
+                    <p>Idle Breakout follows an exponential growth structure. Early investments focus on unlocking new
+                        ball types. Mid-game strategy shifts toward multiplier upgrades. Late-game scaling depends on
+                        synergy between damage boosts and ball count expansion.</p>
+                    <p>Efficiency improves when players reinvest earnings continuously rather than accumulating idle
+                        currency. The compounding system rewards consistent upgrade cycling.</p>
+                    <p>High-level play involves identifying diminishing returns. Investing evenly across ball types usually
+                        produces stronger long-term output than overspecializing.</p>
+
+                    <h2>Why Idle Breakout Maintains Replay Value</h2>
+                    <p>The core appeal lies in visible acceleration. Each upgrade produces immediate feedback as bricks
+                        collapse faster and screen activity intensifies. The transition from slow manual destruction to
+                        rapid automated clearing reinforces progression satisfaction.</p>
+                    <p>Additionally, level scaling ensures that difficulty increases proportionally with player strength.
+                        This balance prevents stagnation while maintaining achievable milestones.</p>
+
+                    <h2>Related Games</h2>
+                    <p>If you appreciate incremental progression systems with strong scaling mechanics, you may also
+                        enjoy:</p>
+                    <ul>
+                        <li><a href="/doge-miner">Doge Miner</a></li>
+                        <li><a href="/clicker-heroes">Clicker Heroes</a></li>
+                        <li><a href="/cookie-clicker-2">Cookie Clicker 2</a></li>
+                    </ul>
+
+                    <p>Idle Breakout successfully modernizes a classic arcade concept by embedding it within an idle
+                        economy framework. Through smart upgrade allocation and damage optimization, players transform
+                        simple brick breaking into a high-efficiency destruction engine.</p>
+
+                    <div class="category-tags">
+                        <a href="/idle.games/" class="category-tag">Idle</a>
+                        <a href="/arcade.games/" class="category-tag">Arcade</a>
+                    </div>
+
+                    <div class="author-box">
+                        <img src="/assets/favicon.png" alt="Cookie Clicker 2 Team" class="author-image">
+                        <div class="author-info">
+                            <h3>Cookie Clicker 2 Team</h3>
+                            <p>Expert editors and game curators.</p>
+                            <span class="publish-date">Last Updated: February 19, 2026</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="game-sidebar right" id="sidebar-right">
+                <div class="sidebar-content" id="sidebar-right-content"></div>
+            </aside>
+        </div>
+
+        <div id="toast-container" class="toast-container"></div>
+
+        <script>
+            function showToast(message) {
+                var c = document.getElementById('toast-container');
+                if (!c) return;
+                var t = document.createElement('div');
+                t.className = 'toast';
+                t.innerHTML = '<i>✓</i> <span>' + message + '</span>';
+                c.appendChild(t);
+                requestAnimationFrame(function () { t.classList.add('show'); });
+                setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.remove(); }, 300); }, 3000);
+            }
+            function toggleFavorite() {
+                var btn = document.querySelector('.action-btn[title="Favorite"]');
+                if (btn) { btn.classList.toggle('active'); showToast(btn.classList.contains('active') ? 'Added to favorites' : 'Removed from favorites'); }
+            }
+            function shareGame() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: document.title,
+                        text: 'Play Idle Breakout online for free.',
+                        url: window.location.href
+                    }).then(function () {
+                        showToast('Share successful');
+                    }).catch(function () {
+                        showToast('Share canceled');
+                    });
+                } else if (navigator.clipboard) {
+                    navigator.clipboard.writeText(window.location.href).then(function () {
+                        showToast('Link copied to clipboard');
+                    }).catch(function () {
+                        showToast('Unable to copy link');
+                    });
+                }
+            }
+            function toggleTheaterMode() {
+                var body = document.body;
+                body.classList.toggle('theater-mode');
+                showToast(body.classList.contains('theater-mode') ? 'Theater mode on' : 'Theater mode off');
+            }
+            function toggleFullscreen() {
+                var frame = document.getElementById('game-frame');
+                if (!frame) return;
+                if (document.fullscreenElement) {
+                    document.exitFullscreen();
+                } else if (frame.requestFullscreen) {
+                    frame.requestFullscreen();
+                }
+            }
+        </script>
+        <script type="module" src="/src/main.js"></script>
+    </main>
+</body>
+
+</html>
+

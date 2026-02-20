@@ -1,0 +1,252 @@
+:root {
+  --primary-color: #f1c40f;
+  /* Cookie Gold */
+  --secondary-color: #e67e22;
+  /* Cookie Brown */
+  --bg-dark: #0f0f12;
+  --bg-card: #1a1a1f;
+  --text-main: #ffffff;
+  --text-muted: #a0a0a0;
+  --accent-gradient: linear-gradient(135deg, #f1c40f, #e67e22);
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  margin-left: 20px;
+}
+
+.search-input {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 8px 15px 8px 35px;
+  color: var(--text-main);
+  outline: none;
+  font-size: 0.9rem;
+  width: 200px;
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* Game Section */
+.game-container {
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.game-wrapper {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-placeholder {
+  text-align: center;
+}
+
+.game-placeholder h2 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.game-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  padding: 12px 24px;
+  background: var(--glass-bg);
+  color: white;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: var(--accent-gradient);
+  border-color: transparent;
+  transform: translateY(-2px);
+}
+
+/* Content Sections */
+.content-section {
+  margin: 60px 0;
+  padding: 40px;
+  background: var(--glass-bg);
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+}
+
+.content-section h1,
+.content-section h2 {
+  margin-bottom: 20px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-section p {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.content-section ul,
+.content-section ol {
+  margin-left: 20px;
+  color: var(--text-muted);
+}
+
+.content-section li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  padding: 40px 0;
+  background: #050507;
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.footer p {
+  color: var(--text-muted);
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Focus Mode */
+.focus-mode .navbar,
+.focus-mode .content-section,
+.focus-mode .footer {
+  display: none;
+}
+
+.focus-mode .game-container {
+  max-width: 100%;
+  height: 90vh;
+  margin: 0;
+  border-radius: 0;
+}
+
+.focus-mode .game-wrapper {
+  height: calc(100% - 80px);
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .game-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+}

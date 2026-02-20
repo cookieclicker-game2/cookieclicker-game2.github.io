@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f0f12">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-site-verification" content="DBTfPwmBXn36gY3S59zIOocIRA5MvlPa2FMkX1Ttpx0">
+    <title>Cookie Clicker 2 – Play the Addictive Idle Cookie Game</title>
+    <meta name="description"
+        content="Play Cookie Clicker 2 and build your cookie empire with just one click. Unlock upgrades and discover powerful rewards in this idle clicker game.">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="canonical" href="https://cookieclicker2game.org/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cookieclicker2game.org/">
+    <meta property="og:title" content="Cookie Clicker 2 – Play the Addictive Idle Cookie Game">
+    <meta property="og:description"
+        content="Play Cookie Clicker 2 and build your cookie empire with just one click. Unlock upgrades and discover powerful rewards in this idle clicker game.">
+    <meta property="og:image" content="https://cookieclicker2game.org/assets/cookie-clicker-2.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://cookieclicker2game.org/">
+    <meta name="twitter:title" content="Cookie Clicker 2 – Play the Addictive Idle Cookie Game">
+    <meta name="twitter:description"
+        content="Play Cookie Clicker 2 and build your cookie empire with just one click. Unlock upgrades and discover powerful rewards in this idle clicker game.">
+    <meta name="twitter:image" content="https://cookieclicker2game.org/assets/cookie-clicker-2.png">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Cookie Clicker 2",
+      "description": "Play Cookie Clicker 2 and build your cookie empire with just one click. Unlock upgrades and discover powerful rewards in this idle clicker game.",
+      "image": "https://cookieclicker2game.org/assets/cookie-clicker-2.png",
+      "url": "https://cookieclicker2game.org/",
+      "genre": ["Idle", "Clicker", "Simulation"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "Cookie Clicker 2 Team",
+        "url": "https://cookieclicker2game.org/"
+      },
+      "datePublished": "2026-01-01",
+      "dateModified": "2026-02-19",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+
+    <!-- WebSite schema: enables sitelinks search box in Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cookie Clicker 2",
+      "url": "https://cookieclicker2game.org/",
+      "description": "Play Cookie Clicker 2 and free online games: clicker, idle, arcade, .io, adventure, sports.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://cookieclicker2game.org/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+</head>
+
+<body class="page-home">
+    <header class="navbar">
+        <div class="container">
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+            <a href="/" class="logo">Cookie Clicker 2</a>
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" placeholder="Search games...">
+            </div>
+            <nav>
+                <ul>
+
+                    <li><a href="/arcade.games/">Arcade</a></li>
+                    <li><a href="/clicker.games/">Clicker</a></li>
+                    <li><a href="/idle.games/">Idle</a></li>
+                    <li><a href="/io.games/">.io</a></li>
+                    <li><a href="/adventure.games/">Adventure</a></li>
+                    <li><a href="/sports.games/">Sports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="/">Home</a> <span>/</span> <span class="current">Cookie Clicker 2</span>
+        </div>
+
+        <!-- Page 3-column layout: sidebars outside, center holds game + content -->
+        <div class="page-layout-wrapper">
+
+            <!-- Left Sidebar (outside game, spans full height) -->
+            <aside class="game-sidebar left" id="sidebar-left">
+                <div class="sidebar-header">
+                    <h3 class="sidebar-title">New Games</h3>
+                    <a href="/new.games/" class="view-more-icon" title="View more">➜</a>
+                </div>
+                <div class="sidebar-content" id="sidebar-left-content"></div>
+            </aside>
+
+            <!-- Center column: game + content (same width both) -->
+            <div class="page-center-column">
+                <section class="game-hero">
+                    <div class="game-hero-bg"></div>
+                    <div class="game-hero-inner">
+                        <div class="game-wrapper" id="game-frame">
+                            <iframe src="https://memelite70.github.io/assets/cookie-clicker" title="Cookie Clicker 2 game" scrolling="no"
+                                allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                        </div>
+                        <!-- Game Info Bar -->
+                        <div class="game-info-bar">
+                            <div class="game-info-left">
+                                <h1>Cookie Clicker 2</h1>
+                            </div>
+                            <div class="game-actions-right">
+                                <button class="action-btn" onclick="toggleFavorite()"
+                                    title="Favorite"><i>❤️</i></button>
+                                <button class="action-btn" onclick="shareGame()" title="Share"><i>🔗</i></button>
+                                <button class="action-btn" onclick="toggleTheaterMode()"
+                                    title="Theater Mode"><i>▭</i></button>
+                                <button class="action-btn" onclick="toggleFullscreen()"
+                                    title="Fullscreen"><i>↗️</i></button>
+                            </div>
+                        </div>
+                        <!-- Game Carousel -->
+                        <section class="game-carousel-section">
+                            <h2 class="carousel-title">Recommended for you</h2>
+                            <div class="carousel-container">
+                                <button class="carousel-btn prev-btn" aria-label="Previous">❮</button>
+                                <div class="carousel-track-container">
+                                    <div class="carousel-track" id="game-carousel-track">
+                                        <!-- Filled by main.js with Clicker + Idle games -->
+                                    </div>
+                                </div>
+                                <button class="carousel-btn next-btn" aria-label="Next">❯</button>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+                <!-- Content section — same width as game above -->
+                <section class="content-section">
+                    <p>Cookie Clicker 2 is a browser-based incremental idle game that challenges players to build a
+                        massive cookie empire through strategic clicking, smart investments, and exponential scaling.
+                        Designed for fans of casual yet optimization-driven gameplay, Cookie Clicker 2 refines the
+                        addictive formula that made clicker games popular in the United States.</p>
+
+                    <h2>What Is Cookie Clicker 2?</h2>
+                    <p>Cookie Clicker 2 is an incremental clicker game where players generate cookies by manually
+                        clicking and by purchasing automated production buildings. The objective is to maximize
+                        Cookies Per Second (CPS), unlock powerful upgrades, and ascend strategically to gain permanent
+                        multipliers.</p>
+                    <p>Unlike simple tapping games, Cookie Clicker 2 introduces scaling systems that reward long-term
+                        planning. As production increases, costs rise, pushing players to evaluate efficiency, timing,
+                        and ROI (return on investment). This makes the game especially appealing to American players
+                        who enjoy optimization, idle simulators, and incremental progression systems.</p>
+
+                    <h2>Core Gameplay Mechanics</h2>
+
+                    <h3>Clicking to Generate Initial Cookies</h3>
+                    <p>At the start of Cookie Clicker 2, players manually click the large on-screen cookie. Each
+                        click generates a small number of cookies, forming the foundation of early progression.</p>
+                    <p><strong>Early strategy tip:</strong></p>
+                    <ul>
+                        <li>Focus on increasing click value upgrades.</li>
+                        <li>Reach automation milestones as quickly as possible.</li>
+                        <li>Avoid overspending on inefficient early purchases.</li>
+                    </ul>
+                    <p>The clicking phase is short but crucial for establishing growth momentum.</p>
+
+                    <h3>Automating Production with Buildings</h3>
+                    <p>Once enough cookies are collected, players can purchase buildings that automatically generate
+                        cookies per second (CPS). Common building types include:</p>
+                    <ul>
+                        <li>Cursor (automated clicking)</li>
+                        <li>Grandma</li>
+                        <li>Farm</li>
+                        <li>Mine</li>
+                        <li>Factory</li>
+                        <li>Bank</li>
+                        <li>Temple</li>
+                        <li>Wizard Tower</li>
+                        <li>Portal</li>
+                        <li>Time Machine</li>
+                    </ul>
+                    <p>Each building contributes passive income. As you buy more copies of the same building,
+                        production scales upward, often triggering unlockable upgrades that further boost efficiency.
+                    </p>
+                    <p>Mid-game strategy in Cookie Clicker 2 revolves around balancing building cost versus production
+                        increase. Smart players calculate:</p>
+                    <p><strong>Cost ÷ CPS Increase = Efficiency Value</strong></p>
+                    <p>Lower values indicate better short-term investment potential.</p>
+
+                    <h3>Upgrades and Multipliers</h3>
+                    <p>Upgrades are the core of exponential growth in Cookie Clicker 2. These enhancements can:</p>
+                    <ul>
+                        <li>Multiply total CPS</li>
+                        <li>Increase click strength</li>
+                        <li>Boost specific building output</li>
+                        <li>Improve global efficiency</li>
+                        <li>Enhance special event effects</li>
+                    </ul>
+
+                    <h2>Golden Cookies and Temporary Boosts</h2>
+                    <p>Golden Cookies randomly appear on the screen and provide powerful temporary effects when
+                        clicked. These may include:</p>
+                    <ul>
+                        <li>Frenzy (massive CPS multiplier)</li>
+                        <li>Click Frenzy (enhanced manual clicking)</li>
+                        <li>Lucky bonus (instant cookie reward)</li>
+                        <li>Production boosts</li>
+                    </ul>
+                    <p>Advanced strategy involves stacking Golden Cookie effects with major purchases. For example:</p>
+                    <ol>
+                        <li>Trigger Frenzy.</li>
+                        <li>Buy high-tier buildings during multiplier window.</li>
+                        <li>Trigger Click Frenzy to compound output.</li>
+                    </ol>
+                    <h2>Prestige System and Ascension Mechanics</h2>
+
+                    <h3>What Is Ascension?</h3>
+                    <p>Cookie Clicker 2 features a prestige system that allows players to reset progress in exchange
+                        for permanent bonuses. This process, known as Ascension, is the key to long-term exponential
+                        scaling.</p>
+                    <p>When you ascend:</p>
+                    <ul>
+                        <li>You reset current buildings and upgrades.</li>
+                        <li>You gain prestige points.</li>
+                        <li>You unlock permanent production multipliers.</li>
+                    </ul>
+
+                    <h3>When Should You Ascend?</h3>
+                    <p>Ascending too early slows growth. Ascending too late wastes efficiency. The optimal timing
+                        depends on:</p>
+                    <ul>
+                        <li>Current CPS plateau</li>
+                        <li>Available prestige bonus multiplier</li>
+                        <li>Upgrade progression speed</li>
+                    </ul>
+                    <p>A common strategy is to ascend when prestige gains significantly increase future production
+                        speed—typically when progression slows dramatically.</p>
+
+                    <h2>Best Strategies for Cookie Clicker 2</h2>
+
+                    <h3>Early Game Strategy</h3>
+                    <ul>
+                        <li>Prioritize click upgrades first.</li>
+                        <li>Purchase low-cost automation quickly.</li>
+                        <li>Avoid expensive buildings with low ROI.</li>
+                        <li>Focus on steady CPS growth.</li>
+                    </ul>
+                    <p>Early efficiency determines mid-game acceleration.</p>
+
+                    <h3>Mid-Game Optimization</h3>
+                    <ul>
+                        <li>Compare building ROI before each purchase.</li>
+                        <li>Focus on percentage-based multipliers.</li>
+                        <li>Leverage Golden Cookies for burst growth.</li>
+                        <li>Unlock synergy upgrades tied to building milestones.</li>
+                    </ul>
+                    <p>Mid-game is where strategic planning becomes essential.</p>
+
+                    <h3>Late Game Scaling</h3>
+                    <p>Late-game Cookie Clicker 2 revolves around multiplier stacking and prestige cycles. Strategies
+                        include:</p>
+                    <ul>
+                        <li>Maximizing global production bonuses.</li>
+                        <li>Ascending at mathematically optimal thresholds.</li>
+                        <li>Targeting achievement-based multipliers.</li>
+                        <li>Maintaining long idle sessions for passive accumulation.</li>
+                    </ul>
+                    <p>Idle progression becomes increasingly powerful as multipliers compound.</p>
+
+                    <h2>Why Cookie Clicker 2 Is Popular</h2>
+                    <p>Cookie Clicker 2 aligns perfectly with American gaming preferences due to:</p>
+                    <ul>
+                        <li>Browser accessibility with no download required.</li>
+                        <li>Lightweight performance on school and office computers.</li>
+                        <li>Casual gameplay with deep optimization layers.</li>
+                        <li>Infinite scaling potential.</li>
+                        <li>Quick session play combined with long-term progression.</li>
+                    </ul>
+
+                    <h2>Cookie Clicker 2 vs Other Idle Games</h2>
+                    <p>Compared to many incremental games, Cookie Clicker 2 stands out because it maintains clarity.
+                        The interface is straightforward, yet the scaling system is mathematically rich.</p>
+                    <p>Key advantages include:</p>
+                    <ul>
+                        <li>Clean layout</li>
+                        <li>Transparent production metrics</li>
+                        <li>Balanced exponential growth</li>
+                        <li>Replayability through prestige resets</li>
+                        <li>Simple mechanics with complex outcomes</li>
+                    </ul>
+                    <p>While some idle games overwhelm players with excessive complexity, Cookie Clicker 2 maintains
+                        accessibility while still rewarding analytical thinking.</p>
+
+                    <h2>Is Cookie Clicker 2 Free to Play?</h2>
+                    <p>Yes. Cookie Clicker 2 is completely free to play online. It runs directly in your browser and
+                        does not require installation or payment.</p>
+
+                    <h2>Tips to Maximize Long-Term Growth</h2>
+
+                    <h3>Keep the Game Running</h3>
+                    <p>Idle income accumulates even when you are not actively clicking. Leaving the browser open
+                        increases passive gains.</p>
+
+                    <h3>Focus on Multipliers Over Flat Gains</h3>
+                    <p>Flat increases become negligible in late game. Percentage boosts scale indefinitely.</p>
+
+                    <h3>Monitor Achievement Bonuses</h3>
+                    <p>Achievements often unlock hidden multipliers that significantly boost CPS.</p>
+
+                    <h3>Plan Prestige Cycles</h3>
+                    <p>Efficient ascension timing dramatically accelerates progression across multiple runs.</p>
+
+                    <h2>Final Thoughts</h2>
+                    <p>Cookie Clicker 2 transforms a simple clicking mechanic into a deep incremental strategy
+                        experience. With exponential growth systems, prestige resets, Golden Cookie events, and
+                        automation scaling, the game offers both casual accessibility and high-level optimization.</p>
+                    <p>For players in the United States looking for a free, browser-based idle game that rewards smart
+                        planning and long-term progression, Cookie Clicker 2 remains one of the most satisfying
+                        clicker games available.</p>
+
+                    <h2>Games Similar to Cookie Clicker 2</h2>
+                    <p>If you enjoy the high-speed incremental structure of Cookie Clicker 2, you may also like:</p>
+                    <ul>
+                        <li><a href="/brainrot-clicker">Brainrot Clicker</a> – A chaotic clicker experience with aggressive scaling.
+                        </li>
+                        <li><a href="/mine-clicker-cookie">Mine Clicker: Cookie!</a> – A resource-themed tap game with layered upgrades.
+                        </li>
+                        <li><a href="/idle-game-dev-simulator">Idle Game Dev Simulator</a> – Build a virtual studio and automate production.
+                        </li>
+                        <li><a href="/age-wars-idle">Age Wars Idle</a> – Combine idle mechanics with strategic progression
+                            elements.</li>
+                    </ul>
+                    <p>Each title introduces unique mechanics while maintaining addictive click-based gameplay loops.
+                    </p>
+
+                    <div class="category-tags">
+                        <a href="/clicker.games/" class="category-tag">Clicker</a>
+                        <a href="/idle.games/" class="category-tag">Idle</a>
+                    </div>
+
+                    <div class="author-box">
+                        <img src="/assets/favicon.png" alt="Cookie Clicker 2 Team" class="author-image">
+                        <div class="author-info">
+                            <h3>Cookie Clicker 2 Team</h3>
+                            <p>Expert editors and game curators.</p>
+                            <span class="publish-date">Last Updated: February 19, 2026</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar (outside game, spans full height) -->
+            <aside class="game-sidebar right" id="sidebar-right">
+                <div class="sidebar-content" id="sidebar-right-content"></div>
+            </aside>
+
+        </div>
+
+        <div id="toast-container" class="toast-container"></div>
+
+        <script>
+            function showToast(message) {
+                const container = document.getElementById('toast-container');
+                const toast = document.createElement('div');
+                toast.className = 'toast';
+                toast.innerHTML = `<i>✓</i> <span>${message}</span>`;
+
+                container.appendChild(toast);
+
+                // Trigger animation
+                requestAnimationFrame(() => {
+                    toast.classList.add('show');
+                });
+
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                    setTimeout(() => {
+                        toast.remove();
+                    }, 300);
+                }, 3000);
+            }
+
+            function toggleFavorite() {
+                const btn = document.querySelector('.action-btn[title="Favorite"]');
+                btn.classList.toggle('active');
+                if (btn.classList.contains('active')) {
+                    showToast('Added to favorites');
+                } else {
+                    showToast('Removed from favorites');
+                }
+            }
+
+            function shareGame() {
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    showToast('Link copied to clipboard');
+                }).catch(err => {
+                    showToast('Failed to copy link');
+                });
+            }
+
+            function toggleTheaterMode() {
+                const hero = document.querySelector('.game-hero');
+                hero.classList.toggle('theater-mode');
+                if (hero.classList.contains('theater-mode')) {
+                    hero.scrollIntoView({ behavior: "smooth" });
+                    showToast('Theater mode enabled');
+                } else {
+                    showToast('Theater mode disabled');
+                }
+            }
+        </script>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cookie Clicker 2 Official. All rights reserved.</p>
+            <div class="social-links">
+                <a href="/about-us/">About Us</a>
+                <a href="/contact-us/">Contact Us</a>
+                <a href="/dmca/">DMCA</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-service/">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+        window.toggleFullscreen = function () {
+            const elem = document.getElementById('game-frame');
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+            showToast('Entered fullscreen');
+        }
+    </script>
+</body>
+
+</html>
