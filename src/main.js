@@ -30,7 +30,7 @@ const pathname = (window.location.pathname || '').replace(/\/index\.html$/, '/')
 const isHome = pathname === '/' || pathname === '';
 const isCookieClickerOr2 = pathname.includes('cookie-clicker');
 if (gameContainer && (isHome || isCookieClickerOr2)) {
-    gameContainer.innerHTML = '<iframe src="https://memelite70.github.io/assets/cookie-clicker" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+    gameContainer.innerHTML = '<iframe src="https://memelite70.github.io/assets/cookie-clicker.html" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen></iframe>';
 }
 
 const fullscreenBtn = document.querySelector('#fullscreen-btn');
@@ -311,7 +311,7 @@ if (document.readyState === 'loading') {
 function getRecommendedForCarousel() {
     const pathname = (window.location.pathname || '').replace(/\/index\.html$/, '/') || '/';
     const isHome = pathname === '/' || pathname === '';
-    const currentGameUrl = isHome ? '/cookie-clicker-2' : pathname;
+    const currentGameUrl = isHome ? '/cookie-clicker-2.html' : pathname;
     const hasClickerOrIdle = (g) => (g.categories || [g.category]).some((c) => c === 'Clicker' || c === 'Idle');
     return GAMES.filter(hasClickerOrIdle).filter((g) => g.url !== currentGameUrl);
 }
