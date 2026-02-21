@@ -24,13 +24,13 @@ function initGA() {
 }
 initGA();
 
-// Embed game in #game-frame: homepage and Cookie Clicker → memelite70; other game pages keep their own iframe
+// Embed game in #game-frame: homepage and Cookie Clicker → games-online.io/cake-maker
 const gameContainer = document.querySelector('#game-frame');
 const pathname = (window.location.pathname || '').replace(/\/index\.html$/, '/') || '/';
 const isHome = pathname === '/' || pathname === '';
 const isCookieClicker = pathname === '/cookie-clicker' || pathname === '/cookie-clicker/';
 if (gameContainer && (isHome || isCookieClicker)) {
-    gameContainer.innerHTML = '<iframe src="https://memelite70.github.io/assets/cookie-clicker.html" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+    gameContainer.innerHTML = '<iframe src="https://games-online.io/game/cake-maker/" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen></iframe>';
 }
 
 const fullscreenBtn = document.querySelector('#fullscreen-btn');
