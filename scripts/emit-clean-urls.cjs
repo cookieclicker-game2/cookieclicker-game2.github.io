@@ -10,16 +10,15 @@ const path = require('path');
 
 const dist = path.resolve(__dirname, '../dist');
 const sourceAssets = path.resolve(__dirname, '../assets');
-const gameFiles = [
-    'cookie-clicker', 'cookie-clicker-2', 'fun-clicker', 'liquor-clicker', 'bloodmoney',
-    'italian-brainrot-baby-clicker', 'clicker-evolution-puzzle-2', 'mine-clicker-cookie',
-    'loaf-clicker', 'brainrot-clicker', 'hacking-hero', 'icebreakers-idle-clicker',
-    'idle-landmark-builder', 'age-wars-idle', 'tiny-fishing', 'woodman-idle-tycoon',
-    'tank-masters-idle-tanks', 'flip-skater-idle', 'grow-slime', 'idle-game-dev-simulator',
-    'paper-io-2', 'battletabs', '2v2-io', 'edelweiss', 'crazy-cattle-3d', 'block-blast',
-    'google-dino', 'basketball-stars', 'lolshot-io', 'splatoon-io', 'idle-breakout',
-    'adventure-capitalist', 'clicker-heroes', 'doge-miner'
-];
+
+// Dynamically load game slugs from games-data.js
+const gamesDataPath = path.resolve(__dirname, '../src/games-data.js');
+const gamesDataContent = fs.readFileSync(gamesDataPath, 'utf8');
+const gameFilesMatch = gamesDataContent.match(/url:\s*'\/([^']+)'/g);
+const gameFiles = gameFilesMatch ? gameFilesMatch.map(m => m.match(/'\/([^']+)'/)[1]) : [];
+
+// Filter out any duplicates and special cases if needed
+const uniqueGameFiles = [...new Set(gameFiles)];
 
 function copyDirFilesFlat(fromDir, toDir) {
     if (!fs.existsSync(fromDir)) return;
@@ -32,7 +31,7 @@ function copyDirFilesFlat(fromDir, toDir) {
     });
 }
 
-gameFiles.forEach((name) => {
+uniqueGameFiles.forEach((name) => {
     const src = path.join(dist, name + '.html');
     if (!fs.existsSync(src)) return;
     const dir = path.join(dist, name);
@@ -79,4 +78,41 @@ if (fs.existsSync(distAssets)) {
     }
 }
 
-console.log('Emitted clean URL folders and asset aliases for', gameFiles.length, 'games.');
+const normalizerJs = `
+(function () {
+  var path = window.location.pathname || '/';
+  var normalizedPath = null;
+  var isDuplicateGameUrl = false;
+  var gameSlugs = ${JSON.stringify(uniqueGameFiles)};
+
+  if (path.length > 1 && path.endsWith('/')) {
+    var slashSlug = path.slice(1, -1);
+    if (gameSlugs.indexOf(slashSlug) !== -1) {
+      normalizedPath = '/' + slashSlug;
+      isDuplicateGameUrl = true;
+    }
+  } else if (/^\\/[a-z0-9-]+\\.html$/.test(path)) {
+    var htmlSlug = path.slice(1, -5);
+    if (gameSlugs.indexOf(htmlSlug) !== -1) {
+      normalizedPath = '/' + htmlSlug;
+      isDuplicateGameUrl = true;
+    }
+  }
+
+  if (isDuplicateGameUrl) {
+    var robotsMeta = document.querySelector('meta[name="robots"]');
+    if (!robotsMeta) {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.setAttribute('name', 'robots');
+      document.head.appendChild(robotsMeta);
+    }
+    robotsMeta.setAttribute('content', 'noindex, nofollow');
+  }
+
+  if (!normalizedPath || normalizedPath === path) return;
+  window.location.replace(normalizedPath + window.location.search + window.location.hash);
+})();
+`;
+fs.writeFileSync(path.join(dist, 'url-normalizer.js'), normalizerJs);
+
+console.log('Emitted clean URL folders, asset aliases, and url-normalizer.js for', uniqueGameFiles.length, 'games.');

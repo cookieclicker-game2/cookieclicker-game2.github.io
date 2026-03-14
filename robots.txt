@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: /404
 Allow: /
+
+Disallow: /404
+Disallow: /search
+Disallow: /*?
 
 Sitemap: https://cookieclicker2game.org/sitemap.xml

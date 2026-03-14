@@ -1,0 +1,4 @@
+# Long cache for static assets (improves "Use efficient cache lifetimes" in Lighthouse)
+# Netlify / Cloudflare Pages: place this in the publish root.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

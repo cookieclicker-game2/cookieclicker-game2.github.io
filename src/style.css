@@ -434,6 +434,74 @@ nav a:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.game-play-placeholder {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.game-play-placeholder:hover {
+  transform: scale(1.02);
+}
+
+.game-play-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: background 0.3s;
+  z-index: 1;
+}
+
+.game-play-placeholder:hover::after {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.play-btn-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.play-btn {
+  background: var(--accent-gradient);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 30px rgba(241, 196, 15, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.play-btn i {
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(241, 196, 15, 0.6);
+}
+
 /* Iframe fills entire game frame so embed matches the play area */
 .game-wrapper iframe {
   position: absolute;
@@ -714,6 +782,69 @@ button:hover {
 
 .content-section li {
   margin-bottom: 10px;
+}
+
+/* Controls Section Redesign */
+.controls-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.control-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.control-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.control-key-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.kbd-key {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  background: linear-gradient(180deg, #2d2d35 0%, #1a1a1f 100%);
+  border: 1px solid #3d3d45;
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  box-shadow: 0 3px 0 #000;
+  text-transform: uppercase;
+}
+
+.control-action {
+  color: var(--text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.control-item .control-label {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .faq-list { margin-top: 24px; }
@@ -1719,49 +1850,129 @@ button:hover {
 }
 
 /* Theater Mode */
-.game-hero.theater-mode {
+body.theater-mode-active {
+  overflow: hidden;
+}
+
+body.theater-mode-active .navbar {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 10001;
+}
+
+body.theater-mode-active .game-hero {
+  position: fixed;
+  top: 70px; /* Navbar height */
+  left: 0;
   width: 100vw;
-  height: 100vh;
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.95);
+  height: calc(100vh - 70px);
+  z-index: 10000;
+  background: var(--bg-dark);
   margin: 0;
   border-radius: 0;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden; /* Prevent hero scroll */
+}
+
+body.theater-mode-active .game-hero-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15px;
+  flex: 1;
+}
+
+body.theater-mode-active .game-wrapper {
+  flex: 1;
+  width: 100%;
+  height: 0; /* Important for flex-grow to work correctly */
+  min-height: 0;
+  aspect-ratio: auto;
+  border-radius: 12px;
+}
+
+body.theater-mode-active .game-info-bar {
+  margin-top: 10px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+}
+
+body.theater-mode-active .game-hero-bg {
+  display: none;
+}
+
+body.theater-mode-active .game-sidebar,
+body.theater-mode-active .content-section,
+body.theater-mode-active .game-carousel-section,
+body.theater-mode-active .footer,
+body.theater-mode-active .breadcrumbs {
+  display: none !important;
+}
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 11000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.toast {
+  background: rgba(26, 26, 31, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transform: translateX(-120%);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: auto;
+}
+
+.toast.show {
+  transform: translateX(0);
+}
+
+.toast i {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 18px;
+  height: 18px;
+  background: var(--primary-color);
+  color: #000;
+  border-radius: 50%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.7rem;
 }
 
-.game-hero.theater-mode .game-container {
-  width: 90vw;
-  max-width: 1400px;
-  height: auto;
-  margin: 0 auto;
+.toast span {
+  font-weight: 500;
+  font-size: 0.85rem;
 }
 
-.game-hero.theater-mode .game-wrapper {
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  height: auto;
-  max-height: 80vh;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.game-hero.theater-mode .game-info-bar {
-  margin-top: 20px;
-  background: rgba(19, 19, 22, 0.8);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  width: 100%;
-}
-
-.game-hero.theater-mode .game-hero-bg {
-  display: none;
+@media (max-width: 768px) {
+  body.theater-mode-active .game-hero {
+    top: 56px;
+    height: calc(100vh - 56px);
+  }
 }
 
 /* Mobile Menu Button */

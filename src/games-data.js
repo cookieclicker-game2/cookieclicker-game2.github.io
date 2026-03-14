@@ -5,12 +5,21 @@
  */
 export const GAMES = [
     {
+        name: 'Tsunamis.io',
+        url: '/tsunamis-io',
+        category: 'Adventure',
+        categories: ['Adventure', '.io'],
+        image: '/assets/tsunamis-io.png',
+        addedDate: '2026-03-14',
+        publishTime: '23:59:59',
+    },
+    {
         name: 'Cookie Clicker',
         url: '/cookie-clicker',
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/cookie-clicker.png',
-        addedDate: '2026-01-15',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Fun Clicker',
@@ -26,7 +35,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/liquor-clicker.png',
-        addedDate: '2026-02-20',
+        addedDate: '2026-02-19',
     },
     {
         name: 'BLOODMONEY',
@@ -34,7 +43,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker', 'Arcade'],
         image: '/assets/bloodmoney.png',
-        addedDate: '2026-02-21',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Italian Brainrot Baby Clicker',
@@ -42,7 +51,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/italian-brainrot-baby-clicker.png',
-        addedDate: '2026-02-22',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Clicker Evolution Puzzle 2',
@@ -50,7 +59,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/clicker-evolution-puzzle-2.png',
-        addedDate: '2026-02-23',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Mine Clicker: Cookie!',
@@ -58,7 +67,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/mine-clicker-cookie.png',
-        addedDate: '2026-02-24',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Loaf Clicker',
@@ -66,7 +75,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/loaf-clicker.png',
-        addedDate: '2026-02-25',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Brainrot Clicker',
@@ -74,7 +83,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/brainrot-clicker.png',
-        addedDate: '2026-02-26',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Hacking Hero: Hacker Clicker',
@@ -82,7 +91,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker'],
         image: '/assets/hacking-hero.png',
-        addedDate: '2026-02-27',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Icebreakers: Idle Clicker',
@@ -90,7 +99,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle', 'Clicker'],
         image: '/assets/icebreakers-idle-clicker.png',
-        addedDate: '2026-02-28',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Idle Landmark Builder',
@@ -98,7 +107,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/idle-landmark-builder.png',
-        addedDate: '2026-02-29',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Tiny Fishing',
@@ -106,7 +115,7 @@ export const GAMES = [
         category: 'Arcade',
         categories: ['Arcade', 'Idle'],
         image: '/assets/tiny-fishing.png',
-        addedDate: '2026-03-01',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Age Wars Idle',
@@ -114,7 +123,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/age-wars-idle.png',
-        addedDate: '2026-03-02',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Woodman Idle Tycoon',
@@ -122,7 +131,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/woodman-idle-tycoon.png',
-        addedDate: '2026-03-03',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Tank Masters: Idle Tanks',
@@ -130,7 +139,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle', 'Arcade'],
         image: '/assets/tank-masters-idle-tanks.png',
-        addedDate: '2026-03-04',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Flip Skater Idle',
@@ -138,7 +147,7 @@ export const GAMES = [
         category: 'Sports',
         categories: ['Sports', 'Idle'],
         image: '/assets/flip-skater-idle.png',
-        addedDate: '2026-03-05',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Grow Slime',
@@ -146,7 +155,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/grow-slime.png',
-        addedDate: '2026-03-06',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Idle Game Dev Simulator',
@@ -154,7 +163,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle'],
         image: '/assets/idle-game-dev-simulator.png',
-        addedDate: '2026-03-07',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Paper.IO 2',
@@ -162,7 +171,7 @@ export const GAMES = [
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/paper-io-2.png',
-        addedDate: '2026-03-08',
+        addedDate: '2026-02-19',
     },
     {
         name: 'BattleTabs',
@@ -170,7 +179,7 @@ export const GAMES = [
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/battletabs.png',
-        addedDate: '2026-03-09',
+        addedDate: '2026-02-19',
     },
     {
         name: '2v2.io',
@@ -178,7 +187,7 @@ export const GAMES = [
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/2v2-io.png',
-        addedDate: '2026-03-10',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Edelweiss',
@@ -186,7 +195,7 @@ export const GAMES = [
         category: 'Adventure',
         categories: ['Adventure', 'Arcade'],
         image: '/assets/edelweiss.png',
-        addedDate: '2026-03-11',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Crazy Cattle 3D',
@@ -194,7 +203,7 @@ export const GAMES = [
         category: 'Arcade',
         categories: ['Arcade', 'Adventure'],
         image: '/assets/crazy-cattle-3d.png',
-        addedDate: '2026-03-12',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Block Blast',
@@ -202,7 +211,7 @@ export const GAMES = [
         category: 'Arcade',
         categories: ['Arcade', 'Puzzle'],
         image: '/assets/block-blast.png',
-        addedDate: '2026-03-13',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Google Dino',
@@ -210,7 +219,7 @@ export const GAMES = [
         category: 'Arcade',
         categories: ['Arcade', 'Adventure'],
         image: '/assets/google-dino.png',
-        addedDate: '2026-03-14',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Basketball Stars',
@@ -218,7 +227,7 @@ export const GAMES = [
         category: 'Sports',
         categories: ['Sports', 'Arcade'],
         image: '/assets/basketball-stars.png',
-        addedDate: '2026-03-15',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Doge Miner',
@@ -226,7 +235,7 @@ export const GAMES = [
         category: 'Clicker',
         categories: ['Clicker', 'Idle'],
         image: '/assets/doge-miner.png',
-        addedDate: '2026-03-16',
+        addedDate: '2026-02-19',
     },
     {
         name: 'LOLShot.io',
@@ -234,7 +243,7 @@ export const GAMES = [
         category: '.io',
         categories: ['.io', 'Arcade', 'Sports'],
         image: '/assets/lolshot-io.png',
-        addedDate: '2026-03-17',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Splatoon.io',
@@ -242,7 +251,7 @@ export const GAMES = [
         category: '.io',
         categories: ['.io', 'Arcade'],
         image: '/assets/splatoon-io.png',
-        addedDate: '2026-03-18',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Idle Breakout',
@@ -250,7 +259,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle', 'Arcade'],
         image: '/assets/idle-breakout.png',
-        addedDate: '2026-03-19',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Adventure Capitalist',
@@ -258,7 +267,7 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle', 'Clicker'],
         image: '/assets/adventure-capitalist.png',
-        addedDate: '2026-03-20',
+        addedDate: '2026-02-19',
     },
     {
         name: 'Clicker Heroes',
@@ -266,6 +275,16 @@ export const GAMES = [
         category: 'Idle',
         categories: ['Idle', 'Clicker', 'Adventure'],
         image: '/assets/clicker-heroes.png',
-        addedDate: '2026-03-21',
+        addedDate: '2026-02-19',
+        publishTime: '23:59:59',
+    },
+    {
+        name: 'Lady Bug 2: Defend the City',
+        url: '/ladybug-2-defend-the-city',
+        category: 'Arcade',
+        categories: ['Arcade', 'Adventure'],
+        image: '/assets/ladybug-2-defend-the-city.png',
+        addedDate: '2026-03-14',
+        publishTime: '15:00:00',
     },
 ];

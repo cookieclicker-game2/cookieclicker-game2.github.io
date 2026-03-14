@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="/url-normalizer.js"></script>
+ <title>Tsunamis.io – Multiplayer Survival and Tycoon Game</title>
+ <meta name="description"
+ content="Tsunamis.io is a fast-paced multiplayer survival game where players collect brainrots, escape massive tsunami waves, build a tycoon base, and compete with others online.">
+
+ <link rel="icon" type="image/png" href="/assets/favicon.png">
+ <link rel="canonical" href="https://cookieclicker2game.org/tsunamis-io">
+
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://cookieclicker2game.org/tsunamis-io">
+ <meta property="og:title" content="Tsunamis.io">
+ <meta property="og:description"
+ content="Tsunamis.io is a fast-paced multiplayer survival game where players collect brainrots, escape massive tsunami waves, build a tycoon base, and compete with others online.">
+ <meta property="og:image" content="https://cookieclicker2game.org/assets/tsunamis-io.png">
+ <meta property="og:image:width" content="1200">
+ <meta property="og:image:height" content="630">
+
+ <!-- Twitter -->
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:url" content="https://cookieclicker2game.org/tsunamis-io">
+ <meta name="twitter:title" content="Tsunamis.io">
+ <meta name="twitter:description"
+ content="Tsunamis.io is a fast-paced multiplayer survival game where players collect brainrots, escape massive tsunami waves, build a tycoon base, and compete with others online.">
+ <meta name="twitter:image" content="https://cookieclicker2game.org/assets/tsunamis-io.png">
+
+ <!-- Schema Markup -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "VideoGame",
+ "name": "Tsunamis.io",
+ "description": "Tsunamis.io is a fast-paced multiplayer survival and tycoon game set in a world constantly threatened by giant tsunami waves.",
+ "image": "https://cookieclicker2game.org/assets/tsunamis-io.png",
+ "url": "https://cookieclicker2game.org/tsunamis-io",
+ "genre": ["Action", "Adventure", "Survival", "Tycoon"],
+ "applicationCategory": "Game",
+ "operatingSystem": "Web Browser",
+ "offers": {
+ "@type": "Offer",
+ "price": "0",
+ "priceCurrency": "USD",
+ "availability": "https://schema.org/InStock"
+ }
+ }
+ </script>
+
+ <!-- BreadcrumbList Schema -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [{
+ "@type": "ListItem",
+ "position": 1,
+ "name": "Home",
+ "item": "https://cookieclicker2game.org/"
+ }, {
+ "@type": "ListItem",
+ "position": 2,
+ "name": "Tsunamis.io",
+ "item": "https://cookieclicker2game.org/tsunamis-io"
+ }]
+ }
+ </script>
+  <link rel="stylesheet" href="/src/style.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="page-tsunamis-io">
+ <header class="navbar">
+ <div class="container">
+ <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+ <a href="/" class="logo">Cookie Clicker 2</a>
+ <div class="search-container">
+ <span class="search-icon">🔍</span>
+ <input type="text" class="search-input" placeholder="Search games...">
+ </div>
+ <nav>
+ <ul>
+ <li><a href="/arcade.games/">Arcade</a></li>
+ <li><a href="/clicker.games/">Clicker</a></li>
+ <li><a href="/idle.games/">Idle</a></li>
+ <li><a href="/io.games/">.io</a></li>
+ <li><a href="/adventure.games/">Adventure</a></li>
+ <li><a href="/sports.games/">Sports</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
+
+ <main class="container">
+ <!-- Breadcrumbs -->
+ <div class="breadcrumbs">
+ <a href="/">Home</a> <span>/</span> <span class="current">Tsunamis.io</span>
+ </div>
+
+ <!-- Page 3-column layout -->
+ <div class="page-layout-wrapper">
+
+ <!-- Left Sidebar -->
+ <aside class="game-sidebar left" id="sidebar-left">
+ <div class="sidebar-header">
+ <div class="sidebar-title">New Games</div>
+ <a href="/new.games/" class="view-more-icon" title="View more">➜</a>
+ </div>
+ <div class="sidebar-content" id="sidebar-left-content"></div>
+ </aside>
+
+ <!-- Center column -->
+ <div class="page-center-column">
+ <section class="game-hero">
+ <div class="game-hero-bg"></div>
+ <div class="game-hero-inner">
+ 
+ <div class="game-wrapper" id="game-frame">
+  <div class="game-play-placeholder" data-src="https://tsunamis.io"
+  style="background-image: url('/assets/tsunamis-io.png');">
+  <div class="play-btn-container">
+  <button class="play-btn"><i>▶</i> Play Now</button>
+  </div>
+  </div>
+ </div>
+ <!-- Game Info Bar -->
+ <div class="game-info-bar">
+ <div class="game-info-left">
+ <h1>Tsunamis.io</h1>
+ </div>
+ <div class="game-actions-right">
+ <button class="action-btn" onclick="toggleFavorite()"
+ title="Favorite"><i>❤️</i></button>
+ <button class="action-btn" onclick="shareGame()" title="Share"><i>🔗</i></button>
+ <button class="action-btn" onclick="toggleTheaterMode()"
+ title="Theater Mode"><i>▭</i></button>
+ <button class="action-btn" onclick="toggleFullscreen()"
+ title="Fullscreen"><i>↗️</i></button>
+ </div>
+ </div>
+ <!-- Game Carousel -->
+ <section class="game-carousel-section">
+ <h2 class="carousel-title">Recommended for you</h2>
+ <div class="carousel-container">
+ <button class="carousel-btn prev-btn" aria-label="Previous">❮</button>
+ <div class="carousel-track-container">
+ <div class="carousel-track" id="game-carousel-track">
+ <!-- Filled by main.js -->
+ </div>
+ </div>
+ <button class="carousel-btn next-btn" aria-label="Next">❯</button>
+ </div>
+ </section>
+ </div>
+ </section>
+
+ <!-- Content section -->
+ <section class="content-section">
+ <h2>Introduction</h2>
+ <p>Tsunamis.io is a fast-paced multiplayer survival and tycoon game set in a world constantly threatened by giant tsunami waves. Jump into the action now and test your strategy, speed, and survival skills against players from around the world.</p>
+
+ <h2>What Is Tsunamis.io?</h2>
+ <p>Tsunamis.io is an online multiplayer browser game that mixes resource collection, survival gameplay, and tycoon progression. In a shared 3D environment, players must explore the map, gather valuable resources called brainrots, and safely return them to their base to generate income.</p>
+ <p>The challenge comes from the unpredictable environment. At any moment, powerful tsunami waves can sweep across the map, forcing players to quickly escape or risk losing everything they collected. At the same time, other players may attempt to raid unsecured bases and steal valuable resources.</p>
+ <p>Because of this constant danger, every run becomes a balance between risk and reward. Players must decide whether to collect more resources in dangerous areas or retreat early to secure their earnings.</p>
+
+ <h2>How to Play Tsunamis.io</h2>
+ <p>Basic gameplay loop:</p>
+ <ul>
+ <li>Enter the map and begin collecting brainrots</li>
+ <li>Carry the resources back to your base</li>
+ <li>Deposit them to generate passive income</li>
+ <li>Use money to unlock upgrades and improvements</li>
+ <li>Escape incoming tsunami waves before they reach you</li>
+ </ul>
+ <p>As you progress, your base becomes more efficient, allowing you to earn more from each successful run.</p>
+
+ <div class="controls-grid">
+ <div class="control-item">
+ <span class="control-action">Move Character</span>
+ <div class="control-key-wrapper">
+ <kbd class="kbd-key">W</kbd>
+ <kbd class="kbd-key">A</kbd>
+ <kbd class="kbd-key">S</kbd>
+ <kbd class="kbd-key">D</kbd>
+ </div>
+ </div>
+ <div class="control-item">
+ <span class="control-action">Look Around</span>
+ <div class="control-key-wrapper">
+ <span class="control-label">Mouse</span>
+ </div>
+ </div>
+ <div class="control-item">
+ <span class="control-action">Jump / Interact</span>
+ <div class="control-key-wrapper">
+ <kbd class="kbd-key" style="min-width: 80px;">Space</kbd>
+ </div>
+ </div>
+ <div class="control-item">
+ <span class="control-action">Mobile Controls</span>
+ <div class="control-key-wrapper">
+ <span class="control-label">Joystick / Gestures</span>
+ </div>
+ </div>
+ </div>
+ <p>These simple controls make the game easy to learn while still allowing skillful movement and strategy.</p>
+
+ <h2>Key Game Features</h2>
+ <ul>
+ <li>Dynamic tsunami disaster events that reshape gameplay</li>
+ <li>Tycoon-style passive income system</li>
+ <li>Multiplayer competition with base raiding mechanics</li>
+ <li>Rebirth system with permanent upgrade multipliers</li>
+ <li>Unlockable skins and cosmetic customization</li>
+ <li>Random reward items such as lucky blocks</li>
+ </ul>
+ <p>Each feature adds more depth and keeps the gameplay fresh every time you play.</p>
+
+ <h2>Tips and Strategy</h2>
+ <ul>
+ <li>Use safe routes between resource areas and your base</li>
+ <li>Deposit resources often instead of risking big losses</li>
+ <li>Upgrade movement and efficiency early</li>
+ <li>Avoid crowded areas where rivals may attack</li>
+ <li>Learn wave timing so you know when to retreat</li>
+ </ul>
+ <p>Smart planning usually beats speed when trying to survive longer runs.</p>
+
+ <h2>Why Players Love Tsunamis.io</h2>
+ <p>Tsunamis.io stands out because it combines fast survival gameplay with long-term tycoon progression. Every run becomes a small story of risk and reward as players try to gather more resources while staying ahead of the next giant wave.</p>
+ <p>If you enjoy multiplayer survival games with strategy, competition, and unpredictable disasters, Tsunamis.io delivers a thrilling and rewarding browser experience.</p>
+
+ <div class="category-tags">
+ <a href="/adventure.games/" class="category-tag">Adventure</a>
+ <a href="/io.games/" class="category-tag">.io</a>
+ </div>
+
+ <div class="author-box">
+ <img src="/assets/favicon.png" alt="Cookie Clicker Team" class="author-image">
+ <div class="author-info">
+ <h3>Cookie Clicker Team</h3>
+ <p>Expert editors and game curators.</p>
+ <span class="publish-date">Last Updated: March 14, 2026</span>
+ </div>
+ </div>
+
+ <div style="margin-top: 40px; border-top: 1px solid var(--glass-border); padding-top: 20px;">
+ <h2 style="font-size: 1.2rem; margin-bottom: 15px;">Related Games</h2>
+ <div style="display: flex; gap: 15px; font-weight: 600;">
+ <a href="/paper-io-2" style="color: var(--primary-color);">Paper.io 2</a>
+ <a href="/lolshot-io" style="color: var(--primary-color);">Lolshot.io</a>
+ <a href="/ladybug-2-defend-the-city" style="color: var(--primary-color);">Lady Bug 2</a>
+ </div>
+ </div>
+ </section>
+ </div>
+
+ <!-- Right Sidebar -->
+ <aside class="game-sidebar right" id="sidebar-right">
+ <div class="sidebar-content" id="sidebar-right-content"></div>
+ </aside>
+
+ </div>
+
+ <div id="toast-container" class="toast-container"></div>
+
+ <script>
+   function showToast(message) {
+    var c = document.getElementById('toast-container');
+    if (!c) return;
+    var t = document.createElement('div');
+    t.className = 'toast';
+    t.innerHTML = '<i>✓</i> <span>' + message + '</span>';
+    c.appendChild(t);
+    requestAnimationFrame(function () { t.classList.add('show'); });
+    setTimeout(function () { t.classList.remove('show'); setTimeout(function () { t.remove(); }, 300); }, 3000);
+  }
+
+ function toggleFavorite() {
+ const btn = document.querySelector('.action-btn[title="Favorite"]');
+ btn.classList.toggle('active');
+ showToast(btn.classList.contains('active') ? 'Added to favorites' : 'Removed from favorites');
+ }
+
+    function shareGame() {
+    const url = window.location.href;
+    showToast('Link copied to clipboard');
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url);
+    }
+  }
+
+    function toggleTheaterMode() {
+    document.body.classList.toggle('theater-mode-active');
+    if (document.body.classList.contains('theater-mode-active')) {
+      showToast('Theater mode enabled');
+      const hero = document.querySelector('.game-hero');
+      if (hero) {
+        const y = hero.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({top: y, behavior: 'smooth'});
+      }
+    } else {
+      showToast('Theater mode disabled');
+    }
+  }
+ </script>
+ </main>
+
+ <footer class="footer">
+ <div class="container">
+ <p>&copy; 2026 Cookie Clicker 2 Official. All rights reserved.</p>
+ <div class="social-links">
+ <a href="/about-us/">About Us</a>
+ <a href="/contact-us/">Contact Us</a>
+ <a href="/dmca/">DMCA</a>
+ <a href="/privacy-policy/">Privacy Policy</a>
+ <a href="/terms-of-service/">Terms of Service</a>
+ </div>
+ </div>
+ </footer>
+
+ <script>
+ window.toggleFullscreen = function () {
+ const elem = document.getElementById('game-frame');
+ if (elem.requestFullscreen) {
+ elem.requestFullscreen();
+ } else if (elem.webkitRequestFullscreen) {
+ elem.webkitRequestFullscreen();
+ } else if (elem.msRequestFullscreen) {
+ elem.msRequestFullscreen();
+ }
+ showToast('Entered fullscreen');
+ }
+ </script>
+</body>
+
+</html>
